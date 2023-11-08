@@ -11,8 +11,8 @@ namespace Tyuiu.AshirbakievAR.Sprint4.Task3.V20.Lib
     {
         public int Calculate(int[,] array)
         {
-            int rows = array.GetUpperBound(0) + 1;
-            int columns = array.Length / rows;
+            int rows = array.GetLength(0);
+            int columns = array.GetLength(1);
             int min = int.MaxValue;
             for (int i = 0; i < rows; i++)
             {

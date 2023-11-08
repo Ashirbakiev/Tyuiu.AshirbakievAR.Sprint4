@@ -30,8 +30,8 @@ namespace Tyuiu.AshirbakievAR.Sprint4.Task3.V20
             int[,] numsArray = new int[5, 5] { { 8, 7, 7, 8, 5 }, { 4, 3, 5, 3, 6 }, { 5, 3, 8, 6, 3 }, { 6, 3, 8, 5, 4 }, { 3, 6, 8, 3, 4 } };
 
             Console.WriteLine("Исходный массив: ");
-            int rows = numsArray.GetUpperBound(0) + 1;
-            int columns = numsArray.GetUpperBound(1) + 1;
+            int rows = numsArray.GetLength(0);
+            int columns = numsArray.GetLength(1);
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
